@@ -1,0 +1,44 @@
+<style>
+#menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  background-color: #6F156E;
+  padding-left: 200px;
+  box-shadow: 0px 0px 13px #000000
+}
+*>#intro {position: fixed}
+#drop a:hover {
+    color: #222222;
+    box-shadow: -1px 1px 10px #6F006E;
+}
+#drop a:focus {
+  background-color: #DDDDDD;
+}
+a{
+  text-decoration: none;
+  padding: 20px;
+  color: gray;
+}
+#drop {
+  font-family: montserrat;
+  text-align: right;
+    margin: -50px 400px 0px 0px;
+}
+</style>
+<div id=menu>
+  <a href="#"><img src="http://img.photobucket.com/albums/v399/Missinmyman/1fdaa1ae-09e8-4dd7-a252-66a0079b192c_zpsqyebdhkm.jpg"/></a>
+  <div id=drop>
+<a href="#L384">ABOUT</a>
+<a href="#details">PORTFOLIO</a>
+<a href="#FAQ">CONTACT</a>
+    </div>
+</div>
+
+<div><img src="http://mindcamp.org/wordpress/wp-content/uploads/2013/05/joe_cartoon.jpg"/>
+</div>
+<div><img src="https://s-media-cache-ak0.pinimg.com/564x/d7/07/6d/d7076dc941e51e163f275e2973f21f21.jpg"/>
+</div>
+<div><img src="http://aicpa.typepad.com/.a/6a0133f5884316970b01b7c82537ea970b-pi"/></div>

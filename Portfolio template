@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+< html lang="end">
+<!-- static menu -->
+ 
+<style>
+#menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  background-color: #6F156E;
+  padding-left: 200px;
+  box-shadow: 0px 0px 13px #000000
+}
+*>#intro {position: fixed}
+#drop a:hover {
+    color: #222222;
+    box-shadow: -1px 1px 10px #6F006E;
+}
+#drop a:focus {
+  background-color: #DDDDDD;
+}
+a{
+  text-decoration: none;
+  padding: 20px;
+  color: gray;
+}
+#drop {
+  font-family: montserrat;
+  text-align: right;
+    margin: -50px 400px 0px 0px;
+}
+<!-- static menu -->
+<!-- this code makes the grid work -->
+
+[class*='col-'] { 
+    }
+
+  .col-1 { display: block;
+          background-color: #BABABA;
+          margin: 85px 200px 0px 200px;
+          color: #F7F7F7;
+          padding: 80px 30px 50px;
+          font-size: 24px;
+          box-shadow: 0px 0px 1px #000000;
+          }
+                  .greater {
+                  margin: -27% 0% 1% 65%;
+                  }
+                                  .lesser{
+                                  max-width: 60%;
+                                  text-align: right;
+                                  }
+                                                  .higher{
+                                                  margin: 0% 0% 0% 25%;
+                                                  }  
+</style>
+
+<!-- block one -->
+<div id=menu>
+  <a href="#"><img src="http://img.photobucket.com/albums/v399/Missinmyman/1fdaa1ae-09e8-4dd7-a252-66a0079b192c_zpsqyebdhkm.jpg"/></a>
+  <div id=drop>
+<a href="#L384">ABOUT</a>
+<a href="#details">PORTFOLIO</a>
+<a href="#FAQ">CONTACT</a>
+    </div>
+</div>
+<!-- block one -->
+<!-- circle: radius 50% -->
+            <body style="background-color: gray;">
+
+                <div class="col-1">
+                          <p class="lesser">Greetings! I am EclecticExitential, a Junior Web Designer in training. My insatiable thirst for knowledge has led me here, and thus far, I have attained a comfortable level with HTML and CSS. My short term goals include learning other programming languages, such as Javascript, Sass, and Clojure.
+                            <h3 class="higher">
+                            ?????????????????????????&lt;/&gt; 
+                            <h3>
+                            <h3 style="margin: -2% 0% 0% 19%; font-size: 35px"> Web Designer-Student-Gamer </h3>
+                            </p>
+                <div class="greater">
+                <img style="border-radius: 50%;" src="http://img.photobucket.com/albums/v399/Missinmyman/81f48391-2de4-402e-9304-693067b8354e_zpsr7pxbizx.png"/>
+                  </div>
+                </div>
+                <div class="col-4">that if you build it</div>
+                <div class="col-4">they, whoever they are,</div>
+                <div class="col-4">will flock to it</div>
+                <div class="col-4">like dad jokes to puns</div>
+
+            </body>
+
+<! -- menu buttons link to various parts of the page, remain focused until you scroll to next section -->
+<!-- styled with five blocks over a gray background, use project1 -->
+<!-- information about occupation/hobbies, circle photo on right -->
+<!-- second block's filled with six photographs, different sizes -->
+<!-- third's a contact me block, left side for user data, right for personal message on being contacted -->
+<!-- fourth block has two seamless sides, one for about this page, the other for around the web with various circle/logo links -->
+<!-- fifth block goes across bottom, w/ git copyright symbol, the year, all rights reversed? -->
