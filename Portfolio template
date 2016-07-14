@@ -196,14 +196,6 @@ a{
 
             </body>
 
-<! -- menu buttons link to various parts of the page, remain focused until you scroll to next section -->
-<!-- styled with five blocks over a gray background, use project1 -->
-<!-- information about occupation/hobbies, circle photo on right -->
-<!-- second block's filled with six photographs, different sizes -->
-<!-- third's a contact me block, left side for user data, right for personal message on being contacted -->
-<!-- fourth block has two seamless sides, one for about this page, the other for around the web with various circle/logo links -->
-<!-- fifth block goes across bottom, w/ git copyright symbol, the year, all rights reversed? -->
-
 
     <!-- Following script resizes for mobile -->
     <script>
