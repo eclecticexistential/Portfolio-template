@@ -14,7 +14,8 @@
   height: 110px;
   background-color: #6F156E;
   padding-left: 200px;
-  box-shadow: 0px 0px 13px #000000
+  box-shadow: 0px 0px 13px #000000;
+  z-index: 1;
 }
 *>#intro {position: fixed}
 #drop a:hover {
@@ -62,7 +63,7 @@ a{
   .col-2 {
           display: block;
           background-color: #F7F7F7;
-          margin: -20px 200px 0px 200px;
+          margin: -10px 200px 0px 200px;
           padding: 30px;
           color: gray;
           text-align: center;
@@ -78,7 +79,7 @@ a{
                       display: block;
                       max-width: 260px;
                       font-size: 25px;
-                      margin: -55% -40% 10% 60%;
+                      margin: -55% -50% 10% 65%;
                   }
                         .col-3{
                                 display: flex;
@@ -107,6 +108,29 @@ a{
                                     font-size: 25px;
                                     padding: 30px;
                                     }
+form{
+  width:80%;
+}
+@media(min-width:1023px){
+  form{width:40%;margin-left:20px;
+  }
+}
+form .row:first-child .form-item{border-top:1px solid #fff;
+}
+.form-item{position:relative;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #bbb;
+}
+.form-item input, .form-item textarea{position:relative;padding-right:0;padding-left:0;border:0;border-radius:0;font-size:1.5em;background:0 0;box-shadow:none!important;resize:none;width:100%;
+}
+.form-item label{
+display:block;
+position:relative;
+line-height:1.764705882em;
+vertical-align:middle;
+vertical-align:baseline;
+opacity:0;
+-webkit-transition:top .3s ease;transition:top .3s ease,opacity .3s ease;
+}
+
 </style>
 
 <!-- block one -->
@@ -121,8 +145,7 @@ a{
 <!-- block two -->
 <!-- circle: radius 50% -->
             <body style="background-color: gray;">
-
-                <div id= "about"; class="col-1">
+                <div id="about" class="col-1">
                           <p class="lesser">Greetings! I am EclecticExitential, a Junior Web Designer in training. My insatiable thirst for knowledge has led me here, and thus far, I have attained a comfortable level with HTML and CSS. My short term goals include learning other programming languages, such as Javascript, Sass, and Clojure.
                             <h3 class="higher" style="margin: 0% 0% 0% 56%">
                             &lt;/&gt; 
@@ -133,18 +156,21 @@ a{
                 <img style="border-radius: 50%;" src="http://img.photobucket.com/albums/v399/Missinmyman/81f48391-2de4-402e-9304-693067b8354e_zpsr7pxbizx.png"/>
                   </div>
                 </div>
+                  </div>
 <!-- block 3 -->                
-                <div id="port"; class="col-2">
+                <div id="port" class="col-2">
                   <h1>
                     PORTFOLIO<br>
                         &lt;/&gt;</br></h1>
                         <div>
                             <img src="http://img.photobucket.com/albums/v399/Missinmyman/screencap1_zpsjs1bzuhp.png"/>
+                            <img src="http://img.photobucket.com/albums/v399/Missinmyman/yes-you-are_c_6737737_zpsrzawhqqy.jpg"/>
                               <img src="http://img.photobucket.com/albums/v399/Missinmyman/904c67b4-0100-4202-8e03-9eb47fef397b_zpsegku8lnt.png"/>
-                                <img src="http://img.photobucket.com/albums/v399/Missinmyman/7b6ef218-d0d1-4a4d-a28c-dfa3cdc417b0_zpstdcg9ova.png"/>
+                                
                                   <img src="http://img.photobucket.com/albums/v399/Missinmyman/3e8c51fc-f6ab-4f6d-a852-8fbc29627272_zpsvnmtgjsf.jpg"/>
                                     <img src="http://img.photobucket.com/albums/v399/Missinmyman/d9b94ee2-fc69-4e00-be58-7724dd77f40d_zpsigzvkrz7.png"/>
-                                      <img src="http://img.photobucket.com/albums/v399/Missinmyman/yes-you-are_c_6737737_zpsrzawhqqy.jpg"/>
+                                      
+                            <img src="http://img.photobucket.com/albums/v399/Missinmyman/7b6ef218-d0d1-4a4d-a28c-dfa3cdc417b0_zpstdcg9ova.png"/>
                                         <br></br>
                           </div>
                       </div>
@@ -157,14 +183,25 @@ a{
                         &lt;/&gt;</br>
                           </h1>
                           <div style="text-align: left">
-                            <p1>
-                                <input placeholder= "Name">
-                                  </p1>
-                                    <p1><input placeholder="Email address"> </p1>
-                                        <p1><input placeholder="Phone number"> </p1>
-                                          <p1><input placeholder="Message"></p1>
-                                          <p1><button>Send</button>
-                                            </p1>
+                            <form id="contactForm" novalidate="">
+        <div class="form-item">
+          <label for="“name”">Name</label>
+          <input id="name" type="text" placeholder="Name" required=""/>
+        </div>
+        <div class="form-item">
+          <label for="“email”">Email Address</label>
+          <input id="email" type="email" placeholder="Email Address" required=""/>
+        </div>
+        <div class="form-item">
+          <label for="“phone”">Phone Number</label>
+          <input id="phone" type="tel" placeholder="Phone Number" required=""/>
+        </div>
+        <div class="form-item">
+          <label for="“message”">Message</label>
+          <textarea id="message" rows="10" placeholder="Message" required=""></textarea>
+          </div><br/>
+        <button type="submit">Send</button>
+      </form>
                                               </div>
                                               <p2>
                                                 Want to trade ideas for designing a website or an app? Simply in the mood to talk and geek out together? Bravely send me a message, and I'll get back to you. Go on, don't be shy! <br></br> <br></br><br></br>Note: Be brave!</p2>
@@ -192,7 +229,7 @@ a{
                                       </p>
 
                                     </div>
-                <div class="col-4">github &#9400 2016. All Rights Reserved</div>
+                <div class="col-4">github &#9400 <script>document.write(new Date().getFullYear())</script>. All Rights Reserved</div>
 
             </body>
 
