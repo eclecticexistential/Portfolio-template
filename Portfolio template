@@ -4,7 +4,6 @@
  <head>
     <meta charset="UTF-8">
       <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-      </head>
 <style>
 #menu{
   position: fixed;
@@ -99,7 +98,11 @@ a{
                                     max-height: 100px;
                                     border-radius: 60%;
                                     border: white solid 5px;
+                                    background-color: transparent;
                                   }
+                                      .pro:hover{
+                                      background-color:#722872;
+                                      }
                                     .col-4{
                                     display: block;
                                     background-color: #6F156E;
@@ -111,41 +114,44 @@ a{
 form{
   width:80%;
 }
-@media(min-width:1023px){
-  form{width:40%;margin-left:20px;
-  }
-}
-form .row:first-child .form-item{border-top:1px solid #fff;
-}
-.form-item{position:relative;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #bbb;
-}
-.form-item input, .form-item textarea{position:relative;padding-right:0;padding-left:0;border:0;border-radius:0;font-size:1.5em;background:0 0;box-shadow:none!important;resize:none;width:100%;
-}
+        @media(min-width:1023px){
+        form{width:40%;margin-left:20px;
+        }
+          form .row:first-child .form-item{border-top:1px solid #fff;
+            }
+              .form-item{position:relative;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #bbb;
+                }
+                        .form-item input, .form-item textarea{position:relative;padding-right:0;padding-left:0;border:0;border-radius:0;font-size:1.5em;background:0 0;box-shadow:none!important;resize:none;width:100%;
+                            }
 .form-item label{
-display:block;
-position:relative;
-line-height:1.764705882em;
-vertical-align:middle;
-vertical-align:baseline;
-opacity:0;
--webkit-transition:top .3s ease;transition:top .3s ease,opacity .3s ease;
+      display:block;
+      position:relative;
+      line-height:1.764705882em;
+      vertical-align:middle;
+      vertical-align:baseline;
+      opacity:0;
+      -webkit-transition:top .3s ease;transition:top .3s ease,opacity .3s ease;
 }
+      
+                        
 
 </style>
-
+    <a name="top"></a>
+      </head>
+        <!-- top's an anchor for about link -->
 <!-- block one -->
-<div id=menu>
-  <a href="http://codepen.io/"><img src="http://img.photobucket.com/albums/v399/Missinmyman/1fdaa1ae-09e8-4dd7-a252-66a0079b192c_zpsqyebdhkm.jpg"/></a>
-  <div id=drop>
-<a href="#about">ABOUT</a>
+      <div id=menu>
+              <a href="http://codepen.io/"><img src="http://img.photobucket.com/albums/v399/Missinmyman/1fdaa1ae-09e8-4dd7-a252-66a0079b192c_zpsqyebdhkm.jpg"/></a>
+            <div id=drop>
+<a href="#top">ABOUT</a>
 <a href="#port">PORTFOLIO</a>
 <a href="#contact">CONTACT</a>
     </div>
 </div>
-<!-- block two -->
-<!-- circle: radius 50% -->
+      <!-- block two -->
+        <!-- circle: radius 50% -->
             <body style="background-color: gray;">
-                <div id="about" class="col-1">
+                <div class="col-1">
                           <p class="lesser">Greetings! I am EclecticExitential, a Junior Web Designer in training. My insatiable thirst for knowledge has led me here, and thus far, I have attained a comfortable level with HTML and CSS. My short term goals include learning other programming languages, such as Javascript, Sass, and Clojure.
                             <h3 class="higher" style="margin: 0% 0% 0% 56%">
                             &lt;/&gt; 
@@ -169,14 +175,13 @@ opacity:0;
                                 
                                   <img src="http://img.photobucket.com/albums/v399/Missinmyman/3e8c51fc-f6ab-4f6d-a852-8fbc29627272_zpsvnmtgjsf.jpg"/>
                                     <img src="http://img.photobucket.com/albums/v399/Missinmyman/d9b94ee2-fc69-4e00-be58-7724dd77f40d_zpsigzvkrz7.png"/>
-                                      
-                            <img src="http://img.photobucket.com/albums/v399/Missinmyman/7b6ef218-d0d1-4a4d-a28c-dfa3cdc417b0_zpstdcg9ova.png"/>
+                            <img src="http://img.photobucket.com/albums/v399/Missinmyman/7b6ef218-d0d1-4a4d-a28c-dfa3cdc417b0_zpstdcg9ova.png"/> 
                                         <br></br>
+
                           </div>
                       </div>
                       
-
-                <div id="contact"; class="col-2">
+                <div id="contact" class="col-2">
                   <h1>
                     CONTACT ME
                       <br>
@@ -184,21 +189,21 @@ opacity:0;
                           </h1>
                           <div style="text-align: left">
                             <form id="contactForm" novalidate="">
-        <div class="form-item">
-          <label for="“name”">Name</label>
-          <input id="name" type="text" placeholder="Name" required=""/>
+                              <div class="form-item">
+                                  <label for="“name”">Name</label>
+                                    <input id="name" type="text" placeholder="Name" required=""/>
         </div>
-        <div class="form-item">
-          <label for="“email”">Email Address</label>
-          <input id="email" type="email" placeholder="Email Address" required=""/>
+                                    <div class="form-item">
+                                      <label for="“email”">Email Address</label>
+                                       <input id="email" type="email" placeholder="Email Address" required=""/>
         </div>
-        <div class="form-item">
-          <label for="“phone”">Phone Number</label>
-          <input id="phone" type="tel" placeholder="Phone Number" required=""/>
+                                        <div class="form-item">
+                                            <label for="“phone”">Phone Number</label>
+                                              <input id="phone" type="tel" placeholder="Phone Number" required=""/>
         </div>
-        <div class="form-item">
-          <label for="“message”">Message</label>
-          <textarea id="message" rows="10" placeholder="Message" required=""></textarea>
+                                              <div class="form-item">
+                                                    <label for="“message”">Message</label>
+                                              <textarea id="message" rows="10" placeholder="Message" required=""></textarea>
           </div><br/>
         <button type="submit">Send</button>
       </form>
@@ -224,7 +229,7 @@ opacity:0;
                                       </button>
 
                                       <button class="pro"><a href="https://twitter.com/ObserveChampion/"></a></button>
-                                      <button class="pro"><a href="https://plus.google.com/u/0/101409768494363412702/posts"></a></button>
+                                      <button class="pro"><a href="https://plus.google.com/u/0/101409768494363412702/posts"></i></a></button>
 
                                       </p>
 
